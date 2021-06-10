@@ -1,0 +1,43 @@
+#clockContainer{
+    position: relative;
+    margin: auto;/*brings the image to center*/
+    height: 40vw;/* view port width: to make it responsive. depends on the total width of the screen(mobile,tab,laptop)*/
+    width: 40vw;
+     background: url(clock.png) no-repeat ;
+     background-size: 100% 100%;
+}
+
+#hour,#minute,#second{
+    position: absolute;
+    
+    border-radius: 10px;
+}
+
+#hour{
+    width: 1%;
+    height: 19%;
+    top: 36.5%;
+    left: 49.85%;
+    background: black;
+    opacity: 0.7;
+    transform-origin: bottom;/*to rotate the needle from bottom(by default they rotate from the middle)*/
+    
+}
+#minute{
+    width: 1%;
+    height: 22%;
+    top: 33%;
+    left: 49.85%;
+    background: black;
+    transform-origin: bottom;
+    opacity: 0.7;
+}
+#second{
+    width: 1%;
+    height: 28%;
+    top: 27.5%;
+    left: 49.85%;
+    background: red;
+    transform-origin: bottom;
+    opacity: 0.7;
+}
